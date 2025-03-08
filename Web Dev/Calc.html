@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casio-Style Scientific Calculator</title>
+  <!-- Load Computer Modern (LaTeX-style) font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="brand">CASIO</div>
+    <div class="model">fx-991EX</div>
+    <div class="solar-panel"></div>
+    <div class="display">
+      <div class="operation">sin(45)</div>
+      <div class="result">0.7071067812</div>
+    </div>
+    
+    <div class="shift-row">
+      <button class="shift-btn">SHIFT</button>
+      <button class="alpha-btn">ALPHA</button>
+      <button class="mode-btn">MODE</button>
+      <button class="function-btn">ON</button>
+      <button class="function-btn">OFF</button>
+    </div>
+    
+    <div class="buttons">
+      <button class="function-btn">
+        <span class="secondary-text">DRG▶</span>
+        <span class="button-main-text">MENU</span>
+      </button>
+      <button class="function-btn">
+        <span class="secondary-text">SETUP</span>
+        <span class="tertiary-text">A</span>
+        <span class="button-main-text">CALC</span>
+      </button>
+      <button class="function-btn">
+        <span class="secondary-text">(</span>
+        <span class="tertiary-text">B</span>
+        <span class="button-main-text">d/dx</span>
+      </button>
+      <button class="function-btn">
+        <span class="secondary-text">)</span>
+        <span class="tertiary-text">C</span>
+        <span class="button-main-text">∫dx</span>
+      </button>
+      <button class="function-btn">
+        <span class="secondary-text">°'"</span>
+        <span class="tertiary-text">D</span>
+        <span class="button-main-text">Σ</span>
+      </button>
+      
+      <button class="function-btn">
+        <span class="secondary-text">Abs</span>
+        <span class="tertiary-text">E</span>
+        <span class="button-main-text">a^(b/c)</span>
+      </button>
+      <button class="function-btn">
+        <span class="secondary-text">√</span>
+        <span class="tertiary-text">F</span>
+        <span class="button-main-text">√</span>
+      </button>
+      <button class="function-btn">
+        <span class="secondary-text">x²</span>
+        <span class="tertiary-text">G</span>
+        <span class="button-main-text">x³</span>
+      </button>
+      <button class="function-btn">
+        <span class="secondary-text">log₃</span>
+        <span class="tertiary-text">H</span>
+        <span class="button-main-text">x⁻¹</span>
+      </button>
+      <button class="operation-btn">
+        <span class="secondary-text">%</span>
+        <span class="tertiary-text">I</span>
+        <span class="button-main-text">÷</span>
+      </button>
+      
+      <button class="function-btn">
+        <span class="secondary-text">Pol</span>
+        <span class="tertiary-text">J</span>
+        <span class="button-main-text">hyp</span>
+      </button>
+      <button class="function-btn">
+        <span class="secondary-text">sin⁻¹</span>
+        <span class="tertiary-text">K</span>
+        <span class="button-main-text">sin</span>
+      </button>
+      <button class="function-btn">
+        <span class="secondary-text">cos⁻¹</span>
+        <span class="tertiary-text">L</span>
+        <span class="button-main-text">cos</span>
+      </button>
+      <button class="function-btn">
+        <span class="secondary-text">tan⁻¹</span>
+        <span class="tertiary-text">M</span>
+        <span class="button-main-text">tan</span>
+      </button>
+      <button class="operation-btn">
+        <span class="secondary-text">nPr</span>
+        <span class="tertiary-text">N</span>
+        <span class="button-main-text">×</span>
+      </button>
+      
+      <button class="function-btn">
+        <span class="secondary-text">Rec</span>
+        <span class="tertiary-text">O</span>
+        <span class="button-main-text">10^x</span>
+      </button>
+      <button class="function-btn">
+        <span class="secondary-text">sinh</span>
+        <span class="tertiary-text">P</span>
+        <span class="button-main-text">e^x</span>
+      </button>
+      <button class="function-btn">
+        <span class="secondary-text">cosh</span>
+        <span class="tertiary-text">Q</span>
+        <span class="button-main-text">ln</span>
+      </button>
+      <button class="function-btn">
+        <span class="secondary-text">tanh</span>
+        <span class="tertiary-text">R</span>
+        <span class="button-main-text">log</span>
+      </button>
+      <button class="operation-btn">
+        <span class="secondary-text">nCr</span>
+        <span class="tertiary-text">S</span>
+        <span class="button-main-text">−</span>
+      </button>
+      
+      <button class="memory-btn">
+        <span class="secondary-text">STO</span>
+        <span class="tertiary-text">T</span>
+        <span class="button-main-text">RCL</span>
+      </button>
+      <button class="number-btn">7</button>
+      <button class="number-btn">8</button>
+      <button class="number-btn">9</button>
+      <button class="operation-btn">
+        <span class="secondary-text">M+</span>
+        <span class="tertiary-text">Y</span>
+        <span class="button-main-text">+</span>
+      </button>
+      
+      <button class="function-btn">
+        <span class="secondary-text">ENG</span>
+        <span class="tertiary-text">U</span>
+        <span class="button-main-text">(−)</span>
+      </button>
+      <button class="number-btn">4</button>
+      <button class="number-btn">5</button>
+      <button class="number-btn">6</button>
+      <button class="function-btn">
+        <span class="secondary-text">CONV</span>
+        <span class="tertiary-text">V</span>
+        <span class="button-main-text">π</span>
+      </button>
+      
+      <button class="function-btn">
+        <span class="secondary-text">π</span>
+        <span class="tertiary-text">W</span>
+        <span class="button-main-text">Rad</span>
+      </button>
+      <button class="number-btn">1</button>
+      <button class="number-btn">2</button>
+      <button class="number-btn">3</button>
+      <button class="equal-btn">
+        <span class="secondary-text">ANS</span>
+        <span class="tertiary-text">Z</span>
+        <span class="button-main-text">=</span>
+      </button>
+      
+      <button class="function-btn">
+        <span class="secondary-text">DEL</span>
+        <span class="button-main-text">AC</span>
+      </button>
+      <button class="number-btn">0</button>
+      <button class="number-btn">.</button>
+      <button class="function-btn">
+        <span class="secondary-text">DRG</span>
+        <span class="button-main-text">×10^x</span>
+      </button>
+      <button class="operation-btn">
+        <span class="secondary-text">COPY</span>
+        <span class="button-main-text">Ans</span>
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // This could be expanded into a fully functional calculator
+    // Basic functionality for display purposes
+    document.querySelectorAll('button').forEach(button => {
+      button.addEventListener('click', function() {
+        const operation = document.querySelector('.operation');
+        const result = document.querySelector('.result');
+        
+        // Get the main text content, skipping secondary/tertiary labels
+        let buttonText = '';
+        const mainTextElement = this.querySelector('.button-main-text');
+        if (mainTextElement) {
+          buttonText = mainTextElement.textContent.trim();
+        } else {
+          buttonText = this.textContent.trim();
+        }
+        
+        // Just for demo purposes - shows button press in operation display
+        if (buttonText === '=') {
+          // For demo only
+          if (operation.textContent === 'sin(45)') {
+            result.textContent = '0.7071067812';
+          } else if (operation.textContent) {
+            try {
+              result.textContent = eval(operation.textContent);
+            } catch {
+              result.textContent = 'Error';
+            }
+          }
+        } else if (buttonText === 'AC') {
+          operation.textContent = '';
+          result.textContent = '0';
+        } else {
+          // Handle special functions
+          if (['sin', 'cos', 'tan', 'log', 'ln'].includes(buttonText)) {
+            operation.textContent += buttonText + '(';
+          } else if (buttonText === '√') {
+            operation.textContent += 'sqrt(';
+          } else if (buttonText === 'π') {
+            operation.textContent += 'Math.PI';
+          } else if (!['SHIFT', 'ALPHA', 'MODE', 'ON', 'OFF', 'MENU', 'CALC', 'RCL'].includes(buttonText)) {
+            // Skip special function buttons
+            operation.textContent += buttonText;
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
